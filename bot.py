@@ -4,17 +4,17 @@ from discord.ext import commands
 from time import sleep
 from discord.ext.commands import has_permissions
 
-client = commands.Bot(command_prefix = 'm!')
+client = commands.Bot(command_prefix = 's!')
 
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.online,
-    activity=discord.Game(f"Type \'m!help\' to get the list of commands|By Slize @ TruthNetwork|twitch.tv/slizetrue"))
+    activity=discord.Game(f"Type \'s!help\' to get the list of commands|twitch.tv/slizetrue"))
     print('Magik Bot has connected to Discord!')
     
 @client.command()
 async def ping(ctx):
-    await ctx.send(f'Pong! Client side ping is {round(client.latency * 1000)}ms!')
+    await ctx.send(f'Client side ping is {round(client.latency * 1000)}ms!')
 
 @client.command()
 async def unload(ctx, extension):
