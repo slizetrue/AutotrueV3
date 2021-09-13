@@ -1,4 +1,4 @@
-# Magik Bot
-Just another Discord bot.
+# AutoTrue
+Slizetrue Swagness.
 
 
